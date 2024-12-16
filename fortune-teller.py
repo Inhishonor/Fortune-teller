@@ -1,4 +1,6 @@
 
+#Call's fortune's
+import fortune
 def main():
     #Ask what the name and age is.
     name = input("What is your first name? ")

@@ -1,3 +1,4 @@
+
 #Call's fortune's
 import fortune
 def main():

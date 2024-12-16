@@ -7,10 +7,10 @@ sc = "You will be walking on a street and suddenly will combust!"
 ni = "You will win Miss. New Mexico and marry an iguana!"
 ys = "You will surive only to die a horrible death! :)"
 def main():
-   #Ask what the name and age is.
+    #Ask what the name and age is.
     name = input("What is your first name? ")
     print("Welcome to the Fortune Teller of Doom!!!")
-        age = input("What is your age? ")
+    age = input("What is your age? ")
     #Print Name
     print("Hello "+ name + ".")
     x = len(name)
@@ -38,5 +38,4 @@ def main():
             print("While you are brushing your teeth you will be carried away by faries!")
 
 if __name__ == '__main__':
-
-main()
+	main()

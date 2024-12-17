@@ -1,6 +1,6 @@
 
 #Call's fortune's
-from fortune import ds, ud, ss, sc, ni, ys
+from fortune import ds, ud, ss, sc, ni, ys, lf, tv, bt
 def main():
     #Ask what the name and age is.
     name = input("What is your first name? ")
@@ -8,11 +8,11 @@ def main():
     age = input("What is your age? ")
     #Print Name
     print("Hello "+ name + ".")
-    x = len(name)
+    nameLength = len(name)
     #Determine Message
-    if x < 4 or x == 4:
+    if nameLength < 4 or nameLength == 4:
         print(ds)
-    elif x > 4 and x < 7:
+    elif nameLength > 4 and nameLength < 7:
         y = float(age)
         if y < 10:
             print(ud)
@@ -23,14 +23,17 @@ def main():
         elif y > 50 and y < 100:
             print(ni)
         else:
-            print(ys)
+            print(tv)
+    elif nameLength > 7 and nameLength < 11:
+        print(lf)
     else:
         nn = input("Pick a new number between 1 and 100. ")
         z = float(nn)
         if z < 50:
-            print("You will walk into the mouth of a Volcano while tap-dancing!")
+            print(ys)
         else:
-            print("While you are brushing your teeth you will be carried away by faries!")
+            print(bt)
 
 if __name__ == '__main__':
-	main()
+    while True: 
+        main()
